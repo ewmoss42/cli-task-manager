@@ -1,0 +1,5 @@
+node_modules/
+dist/
+tasks.json
+.DS_Store
+.env
