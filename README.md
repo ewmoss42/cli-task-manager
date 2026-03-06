@@ -1,133 +1,107 @@
 # CLI Task Manager
 
-## Overview
+This project is a command-line task management application written in **TypeScript** and executed with **Node.js**. The program allows users to create, edit, complete, delete, and organize tasks directly from the terminal.
 
-The CLI Task Manager is a TypeScript command-line application designed to help users manage tasks directly from the terminal. The program allows users to create, edit, delete, complete, filter, and sort tasks while storing all task data in a local JSON file for persistence between sessions.
+Tasks are stored locally in a **JSON file**, allowing them to persist between sessions. The application provides helpful features such as filtering tasks by status, sorting tasks by priority, and saving task data.
 
-This project demonstrates the use of TypeScript classes, functions, arrays, tuples, and file storage using Node.js. The goal of this project was to practice building a structured TypeScript application while managing data and user interaction through a command-line interface.
-
----
-
-## Features
-
-The CLI Task Manager allows users to:
-
-* Add new tasks with title, description, priority, and optional due date
-* List all tasks
-* Mark tasks as completed
-* Edit existing tasks
-* Delete tasks
-* Filter tasks by status (todo or done)
-* Sort tasks by priority, due date, or creation date
-* Automatically save tasks to a JSON file
-* Load tasks from storage when the program starts
-
-Tasks are stored locally in `tasks.json`, allowing the program to remember tasks across sessions.
+This project demonstrates core programming concepts such as modular code organization, file persistence, command-line interaction, and TypeScript type safety.
 
 ---
 
-## Software Demo Video
+# Instructions for Build and Use
 
-📹 Demo Video:
-https://youtu.be/JAne2gkG5zA
+## Software Demo
 
-The video demonstrates:
-
-* Running the CLI program
-* Creating tasks
-* Editing tasks
-* Marking tasks complete
-* Filtering and sorting tasks
-* JSON persistence between program runs
+[Software Demo](https://youtu.be/JAne2gkG5zA)
 
 ---
 
-## Development Environment
+## Steps to build and/or run the software
 
-Tools used to develop this software:
+1. Install **Node.js (version 24 or later)**.
 
-* Visual Studio Code
-* Node.js
-* TypeScript
-* ESLint
-* Git and GitHub
-* macOS Terminal
+2. Clone the repository:
 
----
+```
+git clone https://github.com/ewmoss42/cli-task-manager.git
+cd cli-task-manager
+```
 
-## Programming Language
+3. Install project dependencies:
 
-This project was written using:
-
-* **TypeScript**
-* **Node.js**
-
-Key TypeScript features used include:
-
-* Classes
-* Functions
-* Arrays
-* Tuples
-* Typed objects
-* Async/await functions
-* File system interaction using Node.js
-
----
-
-## How to Build and Run the Program
-
-### Install dependencies
-
-```bash
+```
 npm install
 ```
 
-### Run the program
+4. Run the application:
 
-```bash
+```
 npm run dev
 ```
 
-This will start the CLI interface where users can interact with the task manager.
+---
+
+## Instructions for using the software
+
+1. Run the program using `npm run dev`.
+
+2. Select a menu option by entering the number shown in the CLI menu.
+
+3. Available actions include:
+
+- List tasks
+- Add a task
+- Mark a task as completed
+- Edit task titles
+- Delete tasks
+- Filter tasks by status
+- Sort tasks by priority
+- Save tasks
+- Exit the program
+
+4. Tasks are saved in a local JSON file so they can be loaded again when the program runs.
 
 ---
 
-## Project Structure
+# Development Environment
 
-```
-cli-task-manager
-│
-├── src
-│   ├── models
-│   │   └── Task.ts
-│   ├── services
-│   │   ├── TaskManager.ts
-│   │   └── StorageService.ts
-│   └── index.ts
-│
-├── package.json
-├── eslint.config.js
-└── README.md
-```
+To recreate the development environment, you need the following software and libraries:
 
----
+* Node.js v24
+* TypeScript
+* ts-node
+* ESLint
+* Git
+* Visual Studio Code
 
-## Future Work
+Libraries installed with npm:
 
-Possible improvements for the project include:
-
-* Adding colored CLI output
-* Implementing search functionality for tasks
-* Adding unit tests using Jest
-* Exporting tasks to other formats (CSV or database)
-* Adding a graphical user interface version
+* typescript
+* ts-node
+* eslint
+* @typescript-eslint/parser
+* @typescript-eslint/eslint-plugin
 
 ---
 
-## Reflection
+# Useful Websites to Learn More
 
-This project helped reinforce the structure of a TypeScript application using multiple files, services, and models. I learned how to manage application state using arrays and classes while also persisting data through JSON storage.
+I found these websites useful in developing this software:
 
-Working with Node.js file operations and command-line input helped deepen my understanding of how backend applications process user interaction and maintain data.
+* [Node.js Documentation](https://nodejs.org/en/docs)
+* [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+* [ESLint Documentation](https://eslint.org/docs/latest/)
+* [MDN Web Docs](https://developer.mozilla.org/)
+* [Stack Overflow](https://stackoverflow.com/)
 
-Overall, this project improved my understanding of TypeScript project organization and strengthened my experience using Git, ESLint, and Node.js in a real software project.
+---
+
+# Future Work
+
+The following items I plan to fix, improve, and/or add to this project in the future:
+
+* [ ] Add task due dates and deadlines
+* [ ] Add colored CLI output for better readability
+* [ ] Add task categories or tags
+* [ ] Implement automatic saving when tasks change
+* [ ] Create a graphical or web interface version of the application
